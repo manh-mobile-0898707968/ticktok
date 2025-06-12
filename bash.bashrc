@@ -7,7 +7,7 @@ sleep 3
 echo "( ~~tool auto start ticktock ~~ )";
 sleep 1
 
-echo " chúc Ae đào coin thật nhiều tiền";
+echo " chúc Ae thật nhiều tiền";
 sleep 1
 
 echo "load... đang lấy thông tin ✓ ";
