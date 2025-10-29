@@ -395,7 +395,7 @@ while True:
     # Đếm ngược delay
     for remaining_time in range(delay, -1, -1):
         color = "\033[1;36m" if remaining_time % 2 == 0 else "\033[1;33m"
-        print(f"\r{color}🚀 M-H |TOOL-v1| {remaining_time}s           ", end="")
+        print(f"\r{color}🚀|TOOL-v1| {remaining_time}s           ", end="")
         time.sleep(1)
     
     print("\r                          \r", end="") 
