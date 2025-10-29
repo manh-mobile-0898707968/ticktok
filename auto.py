@@ -37,6 +37,9 @@ print("\033[1;35m╔════════════════════
 print("\033[1;35m║     \033[1;33m🚀 ĐĂNG NHẬP GOLIKE 🚀      \033[1;35m║")
 print("\033[1;35m╚═════════════════════════════════╝") 
 
+
+print(banner)    # Nhập auth
+
     # Nhập auth
 try:
   Authorization = open("Authorization.txt","x")
@@ -353,6 +356,12 @@ while True:
     link = nhanjob["data"]["link"]
     object_id = nhanjob["data"]["object_id"]
     job_type = nhanjob["data"]["type"]
+    if job_type == "follow":
+           data = nhanjob["data"]
+    if data["count_success"] <= 10 and data["count_is_run"] <= 10 and data["viewer"] < 50:
+           baoloi(ads_id, object_id, account_id, job_type)
+           time.sleep(2)
+           continue
 
     # Kiểm tra loại nhiệm vụ
     if (loai_nhiem_vu == 1 and job_type != "follow") or \
@@ -386,7 +395,7 @@ while True:
     # Đếm ngược delay
     for remaining_time in range(delay, -1, -1):
         color = "\033[1;36m" if remaining_time % 2 == 0 else "\033[1;33m"
-        print(f"\r{color}🚀 manhmobile |TOOL-v1| {remaining_time}s           ", end="")
+        print(f"\r{color}🚀 M-H |TOOL-v1| {remaining_time}s           ", end="")
         time.sleep(1)
     
     print("\r                          \r", end="") 
